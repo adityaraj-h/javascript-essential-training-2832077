@@ -23,4 +23,18 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+
+  changeName: function (newName) {
+    this.name = newName;
+  },
+
+  checkVolume: function () {
+    if (this.volume > 50) {
+      console.log("big backpack");
+    } else {
+      console.log("small backpack");
+    }
+  },
 };
+
+console.log(backpack);
